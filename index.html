@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayang! ❤️</title>
+    <style>
+        /* --- GAYA CSS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe5ec, #ffb3c6);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Kartu Utama */
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border: 2px solid #ff85a1;
+            animation: muncul 1.5s ease-out;
+            z-index: 10;
+        }
+
+        /* Bingkai Foto */
+        .foto-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid #ff4d6d;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .foto-container:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        .foto-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Agar foto tidak gepeng */
+        }
+
+        /* Teks Ucapan */
+        h1 {
+            color: #ff4d6d;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .panggilan-sayang {
+            background-color: #ff4d6d;
+            color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #4a4a4a;
+            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        /* Tombol Interaktif */
+        .btn {
+            background: linear-gradient(45deg, #ff4d6d, #ff758f);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 77, 109, 0.5);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* Animasi Muncul */
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Efek Hati Latar Belakang */
+        .heart-bg {
+            position: absolute;
+            color: #ffb3c6;
+            font-size: 20px;
+            animation: gugur linear infinite;
+            bottom: 100%;
+            z-index: 1;
+        }
+
+        @keyframes gugur {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart-bg" style="left: 10%; animation-duration: 6s;">❤️</div>
+    <div class="heart-bg" style="left: 30%; animation-duration: 9s; font-size: 30px;">🌸</div>
+    <div class="heart-bg" style="left: 50%; animation-duration: 7s;">❤️</div>
+    <div class="heart-bg" style="left: 70%; animation-duration: 11s; font-size: 25px;">✨</div>
+    <div class="heart-bg" style="left: 90%; animation-duration: 5s;">❤️</div>
+
+    <div class="card">
+        <div class="foto-container">
+            <img src="pacarku.png.png" alt="Foto Pacar Tersayang">
+        </div>
+
+        <h1>Selamat Ulang Tahun!</h1>
+        <div class="panggilan-sayang">Untuk kamuu yaa jenn ❤️</div>
+        
+        <p>
+            "happy birthday yaa Jenita Raditia 😙, asekk udah 22th semoga kamu diberii kesehatan yaaa,jangann sering-sering sakitt yaa apalagii sariawan sama kenaa luka🫶🏼. kamu jangan putus asa kamu bisa kok ngadepin tugas PKL kamu, aku percaya kok kamuu bisa ngadepin semuanya apapun itu masalah/kesulitan nya.tetep berbuat baik ke temen temen kamu mau kamu dibilang ini itu gaa usah di dengerin kalau kamu merasa udah ngelakuin yang baik tapi mereka nggangep nya beda cuek aja tetep jadi diri kamu aja sendiri, teruss apa yang kamu mauu semoga tercapai yaa, ituu ajaa mungkin. happy birthday yaaa jenni😙🫶🏼"
+        </p>
+
+        <button class="btn" onclick="tampilPesan()">Klik Ini Dong! ✨</button>
+    </div>
+
+    <script>
+        function tampilPesan() {
+            alert("maaf yaaa cuman sedeharna! Semoga suka yaa ucapan kecil ini ya! 🥰");
+        }
+    </script>
+
+</body>
+</html>
